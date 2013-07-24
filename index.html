@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>SOLID</title>
+        <title>From STUPID to SOLID code!</title>
         <link rel="stylesheet" href="reveal.js/css/reveal.min.css">
         <link rel="stylesheet" href="reveal.js/css/theme/solarized.css" id="theme">
         <link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
@@ -17,15 +17,184 @@
         <div class="reveal">
             <div class="slides">
                 <section>
-                    <h1>SOLID</h1>
-                    <em></em>
+                    <h1 class="title">From STUPID to SOLID code!</h1>
+                    <em>A few basic principles of Object-Oriented Programming and Design.</em>
                 </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        # Disclaimer
+
+                        ## These Are Principles, Not Laws!
+                    </script>
+                </section>
+
                 <section>
                     <section data-markdown>
                         <script type="text/template">
+                            ![](images/shocked-face.jpg)
+
+                            ## STUPID code, seriously?
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## What makes code **STUPID**?
+
+                            * **S**ingleton
+                            * **T**ight Coupling
+                            * **U**ntestability
+                            * **P**remature Optimization
+                            * **I**ndescriptive Naming
+                            * **D**uplication
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## **S**ingleton
+
+                            Programs using global state are very difficult to test.
+
+                            Programs that rely on global state hide their dependencies.
+                            <br>
+                            <br>
+                            <br>
+                            <small>
+                                <a href="https://code.google.com/p/google-singleton-detector/wiki/WhySingletonsAreControversial">
+                                    Why Singletons Are Controversial
+                                </a>
+                                <br>
+                                <a href="http://stackoverflow.com/questions/11292109/why-is-singleton-considered-an-anti-pattern-in-java-world-sometimes">
+                                    Why is Singleton considered an anti pattern?
+                                </a>
+                            </small>
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## **T**ight Coupling
+
+                            Generalization of the **Singleton** issue.
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## **U**ntestability
+
+                            Testing should not be hard.
+
+                            Whenever you don't write tests because you **don’t have time**, the
+                            real issue is that your code is bad.
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## **P**remature Optimization
+
+                            _Premature optimization is the root of all evil._ &mdash; Donald Knuth
+
+                            There is only cost and no benefit.
+                            <br>
+                            <br>
+                            <br>
+                            <small>
+                                <a href="http://www.c2.com/cgi/wiki?PrematureOptimization">PrematureOptimization</a>
+                            </small>
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## **I**ndescriptive Naming
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## **D**uplication
                         </script>
                     </section>
                 </section>
+
+                <section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            # **S**OLID
+
+                            ## Single Responsibility Principle (SRP)
+                        </script>
+                    </section>
+                    <section>
+                        <img src="images/srp.jpg" />
+                        <p>Just because you can, doesn't mean you should!</p>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            There should **never** be more than one reason for a class to change.
+                        </script>
+                    </section>
+                </section>
+
+                <section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            # S**O**LID
+
+                            ## Open/Closed Principle (OCP)
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            Software entities should be **open for extension**,
+                            <br>but **closed for modification**.
+                        </script>
+                    </section>
+                </section>
+
+                <section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            # SO**L**ID
+
+                            ## Liskov Substitution Principle (LSP)
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            Objects in a program should be replaceable with instances of their subtypes
+                            without altering the correctness of that program.
+                        </script>
+                    </section>
+                </section>
+
+                <section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            # SOL**I**D
+
+                            ## Interface Segregation Principle (ISP)
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            Many client-specific interfaces are better than one general-purpose interface.
+                        </script>
+                    </section>
+                </section>
+
+                <section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            # SOLI**D**
+
+                            ## Dependency Inversion Principle (DIP)
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            One should Depend upon Abstractions. Do not depend upon concretions.
+                        </script>
+                    </section>
+                </section>
+
                 <section data-markdown>
                     <script type="text/template">
                         ## Thank You, Questions?

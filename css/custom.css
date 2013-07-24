@@ -6,3 +6,13 @@
 .me li {
     list-style-type: none;
 }
+
+h1 strong,
+h2 strong {
+    color: #78b9e6;
+    font-weight: none;
+}
+
+.title {
+    font-size: 3.1em !important;
+}
