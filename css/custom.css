@@ -9,7 +9,7 @@
 
 h1 strong,
 h2 strong,
-li strong {
+.highlighted-list li strong {
     color: #78b9e6;
     font-weight: none;
 }
