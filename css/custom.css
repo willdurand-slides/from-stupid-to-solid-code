@@ -8,11 +8,28 @@
 }
 
 h1 strong,
-h2 strong {
+h2 strong,
+li strong {
     color: #78b9e6;
     font-weight: none;
 }
 
 .title {
     font-size: 3.1em !important;
+}
+
+.left {
+    float: left;
+    width: 47%;
+    margin-top: 9% !important;
+    text-align: justify;
+}
+
+.right {
+    margin-left: 50% !important;
+}
+
+.no-border {
+    border: 0 !important;
+    box-shadow: none !important;
 }

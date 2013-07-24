@@ -17,7 +17,7 @@
         <div class="reveal">
             <div class="slides">
                 <section>
-                    <h1 class="title">From STUPID to SOLID code!</h1>
+                    <h1 class="title">From <strong>STUPID</strong> to <strong>SOLID</strong> code!</h1>
                     <em>A few basic principles of Object-Oriented Programming and Design.</em>
                 </section>
 
@@ -34,7 +34,7 @@
                         <script type="text/template">
                             ![](images/shocked-face.jpg)
 
-                            ## STUPID code, seriously?
+                            ## **STUPID** code, seriously?
                         </script>
                     </section>
                     <section data-markdown>
@@ -114,7 +114,9 @@
                         <script type="text/template">
                             ## **I**ndescriptive Naming
 
-                            Name your classes, methods, variables properly.
+                            Name your classes, methods, attributes, and variables properly.
+
+                            Don't abbreviate, never!
                         </script>
                     </section>
                     <section data-markdown>
@@ -142,11 +144,29 @@
                             ## **SOLID** to the rescue!
                         </script>
                     </section>
+                    <section>
+                        <h1>SOLID</h1>
+                        <p class="left">
+                            A term describing a collection of design principles for <strong>good code</strong>
+                            that was coined by <strong>Robert C. Martin</strong> also known as <strong>Uncle Bob</strong>.
+                        </p>
+                        <p class="right">
+                            <img src="images/books.png" class="no-border" />
+                        </p>
+                        </script>
+                    </section>
+
                     <section data-markdown>
                         <script type="text/template">
                             # **S**OLID
-
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
                             ## **S**ingle Responsibility Principle (SRP)
+
+                            There should **never** be **more than one reason**
+                            <br>for a class to change.
                         </script>
                     </section>
                     <section>
@@ -155,18 +175,13 @@
                     </section>
                     <section data-markdown>
                         <script type="text/template">
-                            There should **never** be more than one reason for a class to change.
-                        </script>
-                    </section>
-                    <section data-markdown>
-                        <script type="text/template">
                             # S**O**LID
-
-                            ## **O**pen/Closed Principle (OCP)
                         </script>
                     </section>
                     <section data-markdown>
                         <script type="text/template">
+                            ## **O**pen/Closed Principle (OCP)
+
                             Software entities should be **open for extension**,
                             <br>but **closed for modification**.
                         </script>
@@ -174,38 +189,55 @@
                     <section data-markdown>
                         <script type="text/template">
                             # SO**L**ID
-
-                            ## **L**iskov Substitution Principle (LSP)
                         </script>
                     </section>
                     <section data-markdown>
                         <script type="text/template">
+                            ## **L**iskov Substitution Principle (LSP)
+
                             Objects in a program should be replaceable with instances of their subtypes
-                            without altering the correctness of that program.
+                            **without altering the correctness** of the program.
+                            <br>
+                            <br>
+                            <br>
+                            <small>
+                                <a href="http://c2.com/cgi/wiki?LiskovSubstitutionPrinciple">Liskov Substitution Principle</a>
+                            </small>
                         </script>
                     </section>
                     <section data-markdown>
                         <script type="text/template">
                             # SOL**I**D
-
-                            ## **I**nterface Segregation Principle (ISP)
                         </script>
                     </section>
                     <section data-markdown>
                         <script type="text/template">
-                            Many client-specific interfaces are better than one general-purpose interface.
+                            ## **I**nterface Segregation Principle (ISP)
+
+                            **Many** client-**specific** interfaces are **better than one**
+                            <br>general-purpose interface.
                         </script>
                     </section>
                     <section data-markdown>
                         <script type="text/template">
                             # SOLI**D**
-
-                            ## **D**ependency Inversion Principle (DIP)
                         </script>
                     </section>
                     <section data-markdown>
                         <script type="text/template">
-                            One should Depend upon Abstractions. Do not depend upon concretions.
+                            ## **D**ependency Inversion Principle (DIP)
+
+                            High level modules **should not depend upon low level** modules. Both **should depend upon abstractions**.
+
+                            Abstractions should not depend upon details. Details should depend upon abstractions.
+                            <br>
+                            <br>
+                            <br>
+                            <small>
+                                <a href="http://martinfowler.com/articles/dipInTheWild.html">DIP in the Wild</a>
+                                <br>
+                                <a href="http://www.c2.com/cgi/wiki?DependencyInversionPrinciple">Dependency Inversion Principle</a>
+                            </small>
                         </script>
                     </section>
                 </section>
